@@ -4,6 +4,40 @@
         <title>My Projects</title>
         <link rel="shortcut icon" href="images/logo.png">
         <link rel="stylesheet" href="styles.css">
+        <style>
+            table {
+                border-collapse: collapse;
+                margin: auto;
+                margin-top: 10px;
+            }
+            th{
+                font-size: 20px;
+                text-decoration: underline;
+                text-transform: uppercase;
+            }
+            td, th{
+                border: 1px solid darkblue;
+                text-align: center;
+                padding: 5px;
+            }
+            .description{
+                text-align: left;
+            }
+            .description ul{
+                padding-top: 3px;
+                margin-left: 15px;
+                font-size: small;
+            }
+            td img{
+                width: 90px;
+                height: 60px;
+                /* border-style: dashed;
+                border-width: 3px;
+                border-color: black;
+                border-radius: 25%; */
+            }
+
+        </style>
     </head>
     <body>
         <header>
@@ -21,7 +55,7 @@
             <ul class="nav-bar">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About Me</a></li>
-                <li><a href="projects.html">Projects</a></li>
+                <li><a href="projects.html" class="current">Projects</a></li>
                 <li><a href="publications.html">Publications</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
@@ -32,6 +66,37 @@
         </header>
 
         <div>
+            <table>
+                <tr>
+                    <th>Icon</th>
+                    <th>Title</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td><img src="images/linkedin-logo.png" alt="some icon"></td>
+                    <td>Project 1</td>
+                    <td class="description">
+                        The project is a web application featuring:
+                        <ul>
+                            <li>Academics</li>
+                            <li>Contact info</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">Project 2a</td>
+                    <td class="description" rowspan="2">Description for Project 2a and 2b</td>
+                </tr>
+                <tr>
+                    <td><img alt="Project 2b icon"></td>
+                    <td>Project 2b</td>
+                </tr>
+                <tr>
+                    <td><img alt="Project 3 icon"></td>
+                    <td>Project 3</td>
+                    <td class="description">Description for project 3</td>
+                </tr>
+            </table>
 
         </div>
 

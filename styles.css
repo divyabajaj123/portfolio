@@ -41,6 +41,10 @@ header {
     text-decoration: none;
 }
 
+.nav-bar .current{
+    color: darkblue;
+}
+
 a:hover{
     text-decoration: underline;
 }
