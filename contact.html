@@ -4,6 +4,48 @@
         <title>Contact Me</title>
         <link rel="shortcut icon" href="images/logo.png">
         <link rel="stylesheet" href="styles.css">
+
+        <script src="contact.js"></script>
+
+        <style>
+            form{
+                width: fit-content;
+                margin: auto;
+                padding: 5px;
+                text-align: left;
+            }
+
+            legend{
+                text-align: center;
+            }
+
+            fieldset{
+                padding: 2px 3px 7px;
+                border-radius: 4px;
+            }
+
+            label{
+                display: inline-block;
+                vertical-align: top;
+                width: 75px;
+                color: #777777;
+            }
+
+            input, textarea{
+                width: 250px;
+                border: 1px solid #bbbbbb;
+                border-radius: 4px;
+                margin-bottom: 3px;
+            }
+
+            .sbmt-btn{
+                padding: 2px 5px;
+                width:fit-content;
+                font-size: 13px;
+                color: #666666;
+                background-color: #eeeeee;
+            }
+        </style>
     </head>
     <body>
         <header>
@@ -32,11 +74,26 @@
         </header>
 
         <div>
-            
+            <form name="contactMe" onsubmit="sendMessage();">  
+                <fieldset>
+                    <legend>Contact Me</legend>
+                    <label>Name:</label>
+                    <input name="uname" type="text"><br>
+
+                    <label>Phone:</label>
+                    <input name="phone" type="tel"><br>
+
+                    <label>Message:</label>
+                    <textarea name="message" rows="5" cols="50"></textarea><br>
+
+                    <input class="sbmt-btn" type="submit" value="Send Email!">
+                </fieldset>
+            </form>
         </div>
 
         <footer>
             Copyright &copy; Divya Bajaj
         </footer>
+        
     </body>
 </html>
